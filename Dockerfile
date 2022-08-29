@@ -42,6 +42,7 @@ RUN export PATH=${NB_PYTHON_PREFIX}/bin:${PATH} \
  && pip install --no-cache-dir \
         https://github.com/jupyterhub/jupyter-remote-desktop-proxy/archive/main.zip
 
+# Install vim binding
 RUN pip install jupyterlab_vim
 
 # Update custom Jupyter Lab settings
