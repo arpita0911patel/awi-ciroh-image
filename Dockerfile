@@ -19,26 +19,26 @@ RUN apt-get update -qq --yes > /dev/null && \
     curl \
     vim \
     gcc \
-    gcc-c++ \
+    g++ \
     make \
     cmake \
     ninja-build \
     tar \
     git \
-    gcc-gfortran \
+    gfortran \
     libgfortran \
-    sqlite \
-    sqlite-dev \
-    gdal \
-    gdal-dev \
+    sqlite3 \
+    sqlite3-dev \
+    gdal-bin \
+    libgdal-dev \
     bzip2 \
-    expat \
-    expat-dev \
+    libexpat1 \
+    libexpat1-dev \
     flex \
     bison \
-    udunits2 \
-    udunits2-dev \
-    zlib-dev \
+    libudunits2-0 \
+    libudunits2-dev \
+    zlib1g-dev \
     wget \
     mpich \
     mpich-dev \
