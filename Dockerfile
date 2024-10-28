@@ -28,7 +28,7 @@ RUN apt-get update -qq --yes > /dev/null && \
     gfortran \
     libgfortran5 \
     sqlite3 \
-    sqlite3-dev \
+    libsqlite3-dev \
     gdal-bin \
     libgdal-dev \
     bzip2 \
