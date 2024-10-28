@@ -41,15 +41,15 @@ RUN apt-get update -qq --yes > /dev/null && \
     zlib1g-dev \
     wget \
     mpich \
-    mpich-dev \
-    hdf5 \
-    hdf5-dev \
-    netcdf \
-    netcdf-dev \
-    netcdf-fortran \
-    netcdf-fortran-dev \
-    netcdf-cxx \
-    netcdf-cxx-dev \
+    libmpich-dev \
+    libhdf5-serial \
+    libhdf5-serial-dev \
+    libnetcdf \
+    libnetcdf-dev \
+    libnetcdff \
+    libnetcdff-dev \
+    libnetcdf-c++4 \
+    libnetcdf-c++4-dev \
     lld && \
     rm -rf /var/lib/apt/lists/*
 
