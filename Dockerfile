@@ -26,7 +26,7 @@ RUN apt-get update -qq --yes > /dev/null && \
     tar \
     git \
     gfortran \
-    libgfortran \
+    libgfortran5 \
     sqlite3 \
     sqlite3-dev \
     gdal-bin \
@@ -115,7 +115,7 @@ ENV BOOST_ROOT=/tmp/boost_1_79_0
 
 # Setup for T-Route
 WORKDIR /ngen
-ENV FC=gfortran NETCDF=/usr/lib64/gfortran/modules/
+ENV FC=gfortran NETCDF=/usr/lib/x86_64-linux-gnu/gfortran/modules/
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
 # Install T-Route requirements
@@ -147,7 +147,7 @@ RUN git clone --single-branch --branch $NGEN_BRANCH https://github.com/$NGEN_REP
 
 # Build NGEN
 WORKDIR /ngen/ngen
-ENV PATH=${PATH}:/usr/lib64/mpich/bin
+ENV PATH=${PATH}:/usr/lib/mpich/bin
 
 # Common build arguments for NGEN
 ARG COMMON_BUILD_ARGS="-DNGEN_WITH_EXTERN_ALL=ON \
